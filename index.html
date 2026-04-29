@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Pagina Juan David</title>
 </head>
 <body>
@@ -16,10 +17,10 @@
                 </div>
                 <div class="links">
                     <a href="#" class="link">Inicios</a>
-                    <a href="#" class="link">Servicios</a>
-                    <a href="#" class="link">Proyectos</a>
-                    <a href="#" class="link">Clientes</a>
-                    <a href="#" class="link link--active">Contacto</a>
+                    <a href="#servicios" class="link">Servicios</a>
+                    <a href="#proyectos" class="link">Proyectos</a>
+                    <a href="#clientes" class="link">Clientes</a>
+                    <a href="#contacto" class="link link--active">Contacto</a>
                 </div>
             </div>
         </nav>
@@ -36,7 +37,7 @@
     <main>
         <section class="services">
             <div class="container">
-                <h2 class="subtitle">Nuestros servicios<span class="point">.</span></h2>
+                <h2 class="subtitle" id="servicios">Nuestros servicios<span class="point">.</span></h2>
                 <p class="copy_section">ofrecemos las soluciones perfectas para revolución digital</p>
 
                 <articale class="container-cards">
@@ -72,7 +73,7 @@
         </section>
 
         <section class="projects container">
-            <h2 class="subtitle">Proyectos recientes<span class="point">.</span></h2>
+            <h2 class="subtitle" id="proyectos">Proyectos recientes<span class="point">.</span></h2>
             <p class="copy_section">Hemos colaborado con marcas reconocidas a nivel mundial</p>
             <article class="container-bg">                    
                     <div class="card">
@@ -111,7 +112,7 @@
         
         <section class="testimony">
             <div class="container">
-                <h2 class="subtitle">Clientes satisfechos<span class="point">.</span></h2>
+                <h2 class="subtitle" id="clientes">Clientes satisfechos<span class="point">.</span></h2>
                 <p class="copy_section">Cientos de empresas confian en nosotros</p>
                 
                 <div class="testimony-container">
@@ -183,8 +184,8 @@
             </div>
 
             <form class="newsletter">
-                <input type="text" class="newsletter_input" placeholder="Ingresa tu email">
-                <input type="submit" value="newsletter_submit" value="Comienza hoy">
+                <input type="text" class="newsletter_input" placeholder="Ingresa tu email" autocomplete="off">
+                <input type="submit" class="newsletter_submit" value="Comienza hoy">
             </form>
         </section>
     </main>
@@ -195,17 +196,17 @@
                 <h3 class="title_footer">Descarga nuestra App</h3>
                 <div class="download_app">
                     <div class="download_item">
-                        <i class='bxr bx-store download_logo'  ></i>
+                        <i class='bx bxl-apple download_logo' ></i>
                         <h4 class="download_title">App Store</h4> 
                     </div>
                     <div class="download_item">
-                        <i class='bxr bx-play-circle-alt download_logo'  ></i>
+                        <i class='bx bxl-play-store download_logo' ></i>
                         <h4 class="download_title">Play Store</h4> 
                     </div>
                 </div>
                 
-                <div class="footer_copy">
-                    <p class="copyright">JuanTT &copy; 2020 Todos los derechos reservados</p>
+                <div class="footer_copy" id="contacto">
+                    <p class="copyright">JuanTT &copy; 2026 Todos los derechos reservados</p>
                     
                     <a href="#" class="politica_privacidad politica_privacidad--margin">Politica de privacidad</a>
                     <a href="#" class="politica_privacidad">Terminos y condiciones</a>
@@ -215,12 +216,15 @@
                 <h3 class="title_footer">Estas listo para trabajar con nosotros?</h3>
                 
                 <form class="newsletter newsletter--modifier">
-                    <input type="text" class="newsletter_input" placeholder="Ingresa tu email">
-                    <input type="submit" value="newsletter_submit" value="Comienza hoy">
+                    <input type="text" class="newsletter_input" placeholder="Ingresa tu email" autocomplete="off">
+                    <input type="submit" class="newsletter_submit" value="Comienza hoy">
                 </form>
                 <div class="socialmedia">
                     <p class="socialmedia_legend">siguenos en: </p>
-                    <i class="socialmedia_icon bx bxl-facebook-circle"></i>
+                    <i class='bx bxl-facebook socialmedia_icon'></i>
+                    <i class='bx bxl-instagram socialmedia_icon'></i>
+                    <i class='bx bxl-whatsapp socialmedia_icon' ></i>
+                    <i class='bx bxl-tiktok socialmedia_icon' ></i>
                 </div>
             </section>
         </div>
@@ -228,18 +232,18 @@
         <div class="contact">
             <div class="item_contact">
                 <i class='bx  bx-copyright contact_icon'  ></i> 
-                <h3 class="contact_title">Juan DT</h3>
+                <h3 class="contact_title">Juan Tique</h3>
             </div>
             <div class="item_contact">
                 <i class='bx  bx-mail-open contact_icon'  ></i> 
-                <h3 class="contact_title">Juan@gmail.com</h3>
+                <h3 class="contact_title">tiquetiquejuandavid@gmail.com</h3>
             </div>
             <div class="item_contact">
                 <i class='bx  bxs-location-alt-2 contact_icon'  ></i> 
-                <h3 class="contact_title">Paseos de la reforma</h3>
+                <h3 class="contact_title">Ibagué-Tolima</h3>
             </div>
-            <div class="item_contact item_contact--gold contact_icon--modifier">
-                <i class='bx  bxs-contact-book contact_icon'  ></i>  
+            <div class="item_contact item_contact--gold">
+                <i class='bx  bxs-contact-book contact_icon--modifier' ></i>  
                 <h3 class="contact_title">Contactanos ahora</h3>
             </div>
         </div>
